@@ -1,0 +1,65 @@
+# 项目名称
+Name: "八戒网络科技"
+# 启动端口
+Port: 3020
+# Debug模式
+Debug: true
+# 时区 Asia/Shanghai  America/New_York
+TimeZone: "Asia/Shanghai"
+# 默认语言
+Lang: "zh-CN"
+# 文件路径
+FileRoot: "./public"
+# 是否开启子进程模式
+IsPreFork: false
+
+# 中间件配置
+Middleware:
+  # 限速配置
+  Limiter:
+    # 速率限制最大数 1秒限制
+    Max: 50
+    # 速率限制过期 秒数
+    Expiration: 10
+
+# Mysql配置
+Database:
+  # 连接协议
+  Network: "tcp"
+  # 服务器地址
+  Server: "127.0.0.1"
+  # 数据库端口
+  Port: 3306
+  # 数据库用户名
+  User: "root"
+  # 数据库密码
+  Pass: "Aa123098.."
+  # 数据库名称
+  DbName: "shop"
+
+# Redis配置
+Redis:
+  # 连接协议
+  Network: "tcp"
+  # 服务器地址
+  Server: "127.0.0.1"
+  # 端口
+  Port: 6379
+  # 密码
+  Pass: ""
+  # 数据库 0-15
+  DbName: 1
+  # 连接超时时间
+  ConnectTimeout: 30
+  # 读取超时时间
+  ReadTimeout: 30
+  # 写入超时时间
+  WriteTimeout: 30
+  # 设置最大连接数
+  MaxOpenConn: 0
+  # 空闲连接超时
+  ConnMaxIdleTime: 30
+  # 最大空闲连接数
+  MaxIdleConn: 0
+  # 如果超过最大连接数是否等待
+  Wait: false
